@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Update</h1>
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                 <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Update</th>
+              </tr>
+            </thead>
+            <tbody>
+            {{#each list}}
+              <tr>
+                <th scope="row">{{this.fullName}}</th>
+                <td>{{this.email}}</td>
+                <td>{{this.mobile}}</td>
+                <td>{{this.city}}</td>
+                <td ><a href="/emp/showOne/{{this.id}}" class="btn btn-primary">Update</a></td> 
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+    </div>
+</div>
